@@ -26,6 +26,8 @@ public class ScannerClassChallenge {
             continue;
         }
 
+        sc.close();
+
         System.out.println("Invalid Value");
 
         System.out.println("Your are outside of the Loop End");
