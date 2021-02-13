@@ -1,53 +1,41 @@
 package udemy;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class MinAndMaxChallenge {
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
+        int min = 0;
+        int max = 0;
 
-        ArrayList<Integer> numList = new ArrayList<Integer>();
-//        numList.add(65);
-//        numList.add(564);
-//        numList.add(654);
-//        numList.add(78);
-//        numList.add(8);
-//        System.out.println(numList);
-//
-//        System.out.println(check);
-//        for (int count =  1 ; count < 5 ; count++){
-//
-//            boolean check = sc.hasNextInt();
-//            System.out.println("Enter number");
-//            int input = sc.nextInt();
-//            numList.add(input);
-//
-//            System.out.println(check);
-//
-//        }
 
-        boolean checkNum = sc.hasNextInt();
+        while (true){
 
-        if (checkNum){
+            System.out.println("Enter the Value");
+            boolean check = sc.hasNextInt();
 
-            while (checkNum){
-                System.out.println("Enter the value");
-                int input = sc.nextInt();
-                numList.add(input);
+            // Max and Min Check
+            if (check){
+                int num = sc.nextInt(); // User input
 
+                if (num > max){
+                    max = max + num;
+                }
+                if (num < max){
+                    min = num;
+                }
+            }
+            else {
+                break;
             }
 
         }
-        else {
-            sc.close();
-            System.out.println("Invalid value");
-        }
 
+        System.out.println("Invalid Value");
 
-            System.out.println(numList);
+        System.out.println(min + "= Minimum");
+        System.out.println(max + "= Maximum__");
+
+        sc.close();
 
     }
 }
