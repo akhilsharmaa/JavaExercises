@@ -16,6 +16,7 @@ public class LoopBreak1 {
            if (inputNum <= 0 ){
                break;
            }else continue;
+
        }
         System.out.println("Thanks your negative number");
 
