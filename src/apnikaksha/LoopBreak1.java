@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class LoopBreak1 {
     public static void main(String[] args) {
 
+//  Break is use end the loop ....
 /*  Take user input until user give the Negative number */
 
         Scanner scanner = new Scanner(System.in);
